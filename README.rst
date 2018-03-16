@@ -3,7 +3,6 @@ FULLCOLOR
 *********
 
 fullcolor is a simple python module meant to make it easy to print text in full 24bit colouring. 
-************************************************************************************************
 
 Instead of the usual 256 different colors, fullcolor enables users to use the full 16.7 million color gammut.
 Support for this does depend on the terminal, but if unsupported, it should fallback to 256 colors with no user intervention.
@@ -18,16 +17,16 @@ Currently it provides the ability to:
 
 USAGE:
 
-To import base color class:
-.. code-blocks:: python
-    from fullcolor.colors import Color
+To import base color class
+.. code-block:: python
+   from fullcolor.colors import Color
 
 To import common colors:
-.. code-blocks:: python
+.. code-block:: python
     from fullcolor.colors import CommonColors
 
 Sample print statements:
-.. code-blocks:: python
+.. code-block:: python
     :linenos:
     from fullcolor.colors import Color, CommonColors as cc
 
