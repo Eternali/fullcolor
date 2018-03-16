@@ -14,7 +14,7 @@ except:
 
 setup(
     name='fullcolor',
-    version='0.2.2',
+    version='0.2.3',
     description='Provides an easy way to print full 24bit colors in terminals that support it.',
     long_description=README + '\n\n' + CHANGES,
     url='https://github.com/eternali/fullcolor',

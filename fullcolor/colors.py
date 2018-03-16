@@ -1,7 +1,7 @@
 """
-fullcolor.py  ver. 0.2.1
+colors.py  ver. 0.2.3
 
-(C) Conrad Heidebrecht (github.com/eternali) 15 Mar 2018
+(C) Conrad Heidebrecht (github.com/eternali) 16 Mar 2018
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -23,8 +23,6 @@ from enum import Enum
 import sys
 
 
-# tmode: 38 = foreground; 48 = background
-
 class Tmode(Enum):
     """An enum specifying the modes colors can be printed in the terminal.
 
@@ -33,8 +31,8 @@ class Tmode(Enum):
         bg (int): number that specifies the color to be in background
     """
 
-    fg = 38
-    bg = 48
+    fg = 38  # foreground
+    bg = 48  # background
 
 
 class Color():
@@ -115,16 +113,4 @@ class Color():
     def reset_term(pipe=sys.stdout, rt='\033[0m'):
         pipe.write(rt)
         pipe.flush()
-
-
-class CommonColors():
-    """List of common colors for easy import.
-    Not an explicit enum simply for ease of use (CommonColors.RED instead of CommonColors.RED.value).
-    """
-    RED = Color('ff0000')
-    GREEN = Color('00ff00')
-    BLUE = Color('0000ff')
-    BLACK = Color('000000')
-    WHITE = Color('ffffff')
-    RT = Color('000000').rt
 

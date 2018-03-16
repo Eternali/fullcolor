@@ -13,6 +13,7 @@ Currently it provides the ability to:
  * allows users to extend color modes to print in (modifying the Tmode enum will automatically update the Color classes slots)
  * reset terminal color
  * has a default set of colors for simple use cases
+ * has some common functions to demonstrate use (currently this just includes a rainbow function)
 
 
 USAGE:
@@ -23,12 +24,13 @@ To import base color class
 
 To import common colors:
 .. code:: python
-  from fullcolor.colors import CommonColors
+  from fullcolor.common import CommonColors
 
 Sample print statements:
 .. code:: python
   :linenos:
-  from fullcolor.colors import Color, CommonColors as cc
+  from fullcolor.colors import Color, Tmode
+  from fullcolor.common import CommonColors as cc, rainbow
 
   # print green background, red foreground, then reset terminal colors
   print(cc.GREEN.bg + cc.RED.fg + 'Christmas tree.' + cc.RT)
@@ -39,4 +41,8 @@ Sample print statements:
   custom3 = Color('#a02')
   print(custom1.fg + custom2.bg + 'This is gonna be ' + custom3.bg + 'ugly.' + custom1.rt)
 
+  # print a nice rainbow
+  print(rainbow())
+  # customize the rainbow
+  print(rainbow(cols=80, printchar='#', mode=Tmode.fg))
 
