@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 import os
-from setuptools import setup
-
+from setuptools import find_packages, setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -15,7 +14,7 @@ except:
 
 setup(
     name='fullcolor',
-    version='0.2.1',
+    version='0.2.2',
     description='Provides an easy way to print full 24bit colors in terminals that support it.',
     long_description=README + '\n\n' + CHANGES,
     url='https://github.com/eternali/fullcolor',
@@ -27,13 +26,9 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6'
+        'Programming Language :: Python :: 3'
     ],
     keywords='color colour terminal logging',
-    py_modules=['fullcolor'],
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     install_requires=[]
 )

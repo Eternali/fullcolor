@@ -16,14 +16,14 @@ Currently it provides the ability to:
 USAGE:
 
 To import base color class:
-```from fullcolor.fullcolor import Color```
+```from fullcolor.colors import Color```
 
 To import common colors:
-```from fullcolor.fullcolor import CommonColors```
+```from fullcolor.colors import CommonColors```
 
 Sample print statements:
 ```
-from fullcolor.fullcolor import Color, CommonColors as cc
+from fullcolor.colors import Color, CommonColors as cc
 
 # print green background, red foreground, then reset terminal colors
 print(cc.GREEN.bg + cc.RED.fg + 'Christmas tree.' + cc.RT)
