@@ -1,6 +1,9 @@
-__FULLCOLOR__
+*********
+FULLCOLOR
+*********
 
 fullcolor is a simple python module meant to make it easy to print text in full 24bit colouring. 
+************************************************************************************************
 
 Instead of the usual 256 different colors, fullcolor enables users to use the full 16.7 million color gammut.
 Support for this does depend on the terminal, but if unsupported, it should fallback to 256 colors with no user intervention.
@@ -16,22 +19,25 @@ Currently it provides the ability to:
 USAGE:
 
 To import base color class:
-```from fullcolor.colors import Color```
+.. code-blocks:: python
+    from fullcolor.colors import Color
 
 To import common colors:
-```from fullcolor.colors import CommonColors```
+.. code-blocks:: python
+    from fullcolor.colors import CommonColors
 
 Sample print statements:
-```
-from fullcolor.colors import Color, CommonColors as cc
+.. code-blocks:: python
+    :linenos:
+    from fullcolor.colors import Color, CommonColors as cc
 
-# print green background, red foreground, then reset terminal colors
-print(cc.GREEN.bg + cc.RED.fg + 'Christmas tree.' + cc.RT)
+    # print green background, red foreground, then reset terminal colors
+    print(cc.GREEN.bg + cc.RED.fg + 'Christmas tree.' + cc.RT)
 
-# create custom colors and use them
-custom1 = Color('561f0a')
-custom2 = Color((100, 240, 100))
-custom3 = Color('#a02')
-print(custom1.fg + custom2.bg + 'This is gonna be ' + custom3.bg + 'ugly.' + custom1.rt)
-```
+    # create custom colors and use them
+    custom1 = Color('561f0a')
+    custom2 = Color((100, 240, 100))
+    custom3 = Color('#a02')
+    print(custom1.fg + custom2.bg + 'This is gonna be ' + custom3.bg + 'ugly.' + custom1.rt)
+
 
