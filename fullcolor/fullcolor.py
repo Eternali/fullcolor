@@ -1,5 +1,5 @@
 """
-colors.py  ver. 0.2.0
+fullcolor.py  ver. 0.2.0
 
 (C) Conrad Heidebrecht (github.com/eternali) 15 Mar 2018
 
