@@ -1,7 +1,7 @@
 """
-colors.py  ver. 0.2.3
+colors.py  ver. 0.2.4
 
-(C) Conrad Heidebrecht (github.com/eternali) 16 Mar 2018
+(C) Conrad Heidebrecht (github.com/eternali) 19 Mar 2018
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
